@@ -1,14 +1,20 @@
 #include "main.h"
 
 /**
- * mul - input
- * Description: multiplies 2 numbers
- * @a: first number
- * @b: second number
- * Return: the answer
+ * print_numbers - entry point
+ *
+ * Description: Prints the numbers with _putchar
+ *
+ * Return: void
  */
 
-int mul(int a, int b)
+void print_numbers(void)
 {
-	return (a * b);
+	int number;
+
+	for (number = '0'; number <= '9'; number++)
+	{
+		_putchar(number);
+	}
+	_putchar('\n');
 }
